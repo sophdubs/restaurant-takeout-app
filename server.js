@@ -15,6 +15,7 @@ const { Pool } = require('pg');
 const dbParams = require('./lib/db.js');
 const db = new Pool(dbParams);
 db.connect();
+// Require functions from dbHelpers
 const dbHelpers = require('./helpers/dbHelpers')(db)
 
 
@@ -35,14 +36,24 @@ app.use(express.static("public"));
 
 // Separated Routes for each Resource
 // Note: Feel free to replace the example routes below with your own
+
+
+// const completedOrderRoutes = require("./routes/completed_order");
+// const menuRoutes = require("./routes/menu");
+// const orderRoutes = require("./routes/order");
 const usersRoutes = require("./routes/users");
-const widgetsRoutes = require("./routes/widgets");
+// const widgetsRoutes = require("./routes/widgets");
 
 // Mount all resource routes
 // Note: Feel free to replace the example routes below with your own
-app.use("/api/users", usersRoutes(dbHelpers));
-app.use("/api/widgets", widgetsRoutes(dbHelpers));
+
+
+// app.use("/api/order/:id/completed", orderCompletedRoutes(dbHelpers));
+// app.use("/api/order/:id", orderRoutes(dbHelpers));
 // app.use("/api/menu", menuRoutes(dbHelpers));
+app.use("/api/users", usersRoutes(dbHelpers));
+// app.use("/api/widgets", widgetsRoutes(dbHelpers));
+
 // Note: mount other resources here, using the same pattern above
 
 

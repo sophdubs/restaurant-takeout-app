@@ -8,7 +8,8 @@
 const express = require('express');
 const router  = express.Router();
 
-module.exports = ({ getUsers }) => {
+module.exports = ({ getUsers, addUser }) => {
+  // Template GET default
   router.get("/", (req, res) => {
     getUsers()
       .then(users => {
@@ -20,6 +21,17 @@ module.exports = ({ getUsers }) => {
           .json({ error: err.message });
       });
   });
-  
+  // Template POST
+  router.post("/", (req, res) => {
+    const {name, email, password} = req.body
+    console.log(name, email, password)
+    // Can test post request using CURL or Insomnia (49:35 in lecture)
+    addUser(name, email, password)
+      .then(user => {
+        res.json(user)
+      })
+      .catch(err => console.log(err))
+  })
+
   return router;
 };
