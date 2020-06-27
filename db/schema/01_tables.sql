@@ -29,8 +29,7 @@ CREATE TABLE orders
   special_instructions TEXT,
   order_ready_duration INTEGER NOT NULL,
   order_ready BOOLEAN NOT NULL DEFAULT FALSE,
-  order_complete_at TIMESTAMP NOT NULL,
-  order_total as INTEGER
+  order_complete_at TIMESTAMP,
 );
 
 
@@ -40,7 +39,7 @@ CREATE TABLE ordered_items
   order_id INTEGER REFERENCES orders(id) ON DELETE CASCADE,
   menu_item_id INTEGER REFERENCES menu_items(id),
   price_charged INTEGER NOT NULL,
-  qty INTEGER NOT NULL DEFAULT 0,
+  qty INTEGER NOT NULL DEFAULT 1,
 );
 
 CREATE TABLE menu_items
@@ -48,6 +47,8 @@ CREATE TABLE menu_items
   id SERIAL PRIMARY KEY NOT NULL,
   name VARCHAR(255),
   thumbnail_url VARCHAR(255),
-  price INTEGER,
-  description TEXT
+  price INTEGER NOT NULL,
+  description TEXT,
+  category VARCHAR
+  (255) NOT NULL
 );
