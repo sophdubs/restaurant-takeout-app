@@ -25,8 +25,18 @@ CREATE TABLE users
 CREATE TABLE orders
 (
   id SERIAL PRIMARY KEY NOT NULL,
-  user_id INTEGER
-    REFERENCES users
-(id) ON
-DELETE CASCADE,
+  user_id INTEGER REFERENCES users(id) ON DELETE CASCADE,
+  order_placed_at TIMESTAMP NOT NULL,
+  special_instructions TEXT,
+  order_ready_duration INTEGER NOT NULL,
+  order_ready BOOLEAN NOT NULL DEFAULT FALSE,
+  order_complete_at TIMESTAMP NOT NULL,
+  order_total as INTEGER
+);
+
+
+CREATE TABLE ordered_items
+(
+  id SERIAL PRIMARY KEY NOT NULL,
+
 );
