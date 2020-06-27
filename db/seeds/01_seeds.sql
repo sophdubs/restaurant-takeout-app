@@ -40,21 +40,6 @@ VALUES
 ) 912-7053');
 
 
-INSERT INTO orders
-  (user_id, order_placed_at, special_instructions, order_ready_duration)
-VALUES
-  (1, 539940155, 'No plastic cutlery', 15);
-
-INSERT INTO ordered_items
-  (order_id, menu_item_id, price_charged, qty)
-VALUES
-  (1, 3, 750, 2),
-  (1, 4, 1299, 1),
-  (1, 2, 1399, 1),
-  (1, 6, 1199, 1),
-  (1, 3, 120, 4);
-
-
 INSERT INTO menu_items
   (name,thumbnail_url, price, description,category)
 VALUES
@@ -69,4 +54,16 @@ VALUES
   ('General tao chicken on rice (左雞飯)', 'https://bit.ly/2VmXl7d', 1099, 'General tao style white meat chicken wok fried with green pepper on bed of steam rice', 'mains'),
   ('Canadian Short Can', 'https://bit.ly/2VmXl7d', 600, 'Cold Freezy Chilled Canadian Short Can', 'drinks'),
   ('Soft Drink', 'https://bit.ly/2VmXl7d', 120, 'Cold Freezy Chilled Soft Drink Can', 'drinks'),
-  ('Water', 'https://bit.ly/2VmXl7d', 120, 'Cold Freezy Chilled Soft Water', 'drinks')
+  ('Water', 'https://bit.ly/2VmXl7d', 120, 'Cold Freezy Chilled Soft Water', 'drinks');
+
+  INSERT INTO orders (user_id, order_placed_at, special_instructions, order_ready_duration)
+  VALUES(1, '2020-06-27 08:05:06', 'No plastic cutlery', 15);
+
+  INSERT INTO ordered_items
+    (order_id, menu_item_id, price_charged, qty)
+  VALUES
+    (1, 3, 750, 2),
+    (1, 4, 1299, 1),
+    (1, 2, 1399, 1),
+    (1, 6, 1199, 1),
+    (1, 3, 120, 4);
