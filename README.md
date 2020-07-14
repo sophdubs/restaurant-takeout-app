@@ -29,6 +29,6 @@ User Stories used to implement features
 - Currently using a "free-trial" version of Twilio so all SMS texts must be sent to pre-registered phone numbers
 
 ## Authors
-- Sophie Dubois [link_to_github](https://github.com/sophdubs)
-- Aaron Sham [link_to_github](https://github.com/aaron3993)
-- Sandeep Chopra [link_to_github](https://github.com/letsandeepio)
+- [Sophie Dubois](https://github.com/sophdubs)
+- [Aaron Sham](https://github.com/aaron3993)
+- [Sandeep Chopra](https://github.com/letsandeepio)
