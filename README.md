@@ -1,4 +1,6 @@
 ## Project Description
+A food ordering experience for a single restaurant. Hungry clients of this fictitious restaurant can visit its website, select one or more dishes and place an order for pick-up. They will receive a notification when their order is ready.
+When an order is placed the restaurant receives the order via SMS. The restaurant can then specify how long it will take to fulfill it. Once they provide this information, the website updates for the client and also notifies them via SMS.
 
 ## Final Product
 GIF 
@@ -24,4 +26,9 @@ Entity-Relationship Diagram used to design our PSQL database tables
 User Stories used to implement features 
 
 ## Known Issues
-- Using a "free-trial" version of Twilio so all SMS texts must be sent to pre-registered phone numbers
+- Currently using a "free-trial" version of Twilio so all SMS texts must be sent to pre-registered phone numbers
+
+## Authors
+- Sophie Dubois [link_to_github](https://github.com/sophdubs)
+- Aaron Sham [link_to_github](https://github.com/aaron3993)
+- Sandeep Chopra [link_to_github](https://github.com/letsandeepio)
