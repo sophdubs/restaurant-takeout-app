@@ -3,7 +3,10 @@ A food ordering experience for a single restaurant. Hungry clients of this ficti
 When an order is placed the restaurant receives the order via SMS. The restaurant can then specify how long it will take to fulfill it. Once they provide this information, the website updates for the client and also notifies them via SMS.
 
 ## Final Product
-GIF 
+### Customer Experience
+![](https://media.githubusercontent.com/media/sophdubs/restaurant-takeout-app/master/documentation/client.gif)
+
+### Restaurant Owner Experience
 
 ## Dependencies
 - express
