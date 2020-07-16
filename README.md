@@ -7,7 +7,7 @@ When an order is placed the restaurant receives the order via SMS. The restauran
 ![customer-experience-gif](https://github.com/sophdubs/restaurant-takeout-app/blob/master/documentation/client-experience.gif?raw=true)
 
 ### Restaurant Owner Experience
-
+![owner-experience-gif](https://github.com/sophdubs/restaurant-takeout-app/blob/master/documentation/owner-experience.gif?raw=true)
 
 ## Dependencies
 - express
