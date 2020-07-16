@@ -4,7 +4,7 @@ When an order is placed the restaurant receives the order via SMS. The restauran
 
 ## Final Product
 ### Customer Experience
-
+![customer-experience-gif](https://github.com/sophdubs/restaurant-takeout-app/blob/master/documentation/client-experience.gif?raw=true)
 
 ### Restaurant Owner Experience
 
